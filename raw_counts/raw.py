@@ -1,8 +1,8 @@
 import csv
 
-def add_and_generate_csv(num1, num2):
+def product(num1, num2):
     # Add two numbers
-    result = num1 + num2
+    result = num1 * num2
 
     # Save result to CSV file
     with open('result.csv', 'w', newline='') as csvfile:
@@ -13,6 +13,6 @@ def add_and_generate_csv(num1, num2):
         writer.writeheader()
 
         # Write data
-        writer.writerow({'Number 1': num1, 'Number 2': num2, 'Result': result})
+        writer.writerow({'Number 1': num1, 'Number 2': num2, 'Product': result})
 
     return result
