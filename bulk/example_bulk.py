@@ -6,7 +6,7 @@ def add_and_generate_csv(num1, num2):
 
     # Save result to CSV file
     with open('result.csv', 'w', newline='') as csvfile:
-        fieldnames = ['Number 1', 'Number 2', 'Result']
+        fieldnames = ['Number 1', 'Number 2', 'Sum']
         writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
 
         # Write header

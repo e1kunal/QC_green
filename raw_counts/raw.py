@@ -1,12 +1,12 @@
 import csv
 
 def product(num1, num2):
-    # Add two numbers
+    # Multiply two numbers
     result = num1 * num2
 
     # Save result to CSV file
     with open('result.csv', 'w', newline='') as csvfile:
-        fieldnames = ['Number 1', 'Number 2', 'Result']
+        fieldnames = ['Number 1', 'Number 2', 'Product']
         writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
 
         # Write header
